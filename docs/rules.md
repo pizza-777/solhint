@@ -14,7 +14,6 @@ title:       "Rule Index of Solhint"
 | [max-states-count](./rules/best-practises/max-states-count.md)     | Contract has "some count" states declarations but allowed no more than maxstates.                                     | ✔️          |
 | [no-empty-blocks](./rules/best-practises/no-empty-blocks.md)       | Code contains empty block.                                                                                            | ✔️          |
 | [no-unused-vars](./rules/best-practises/no-unused-vars.md)         | Variable "name" is unused.                                                                                            | ✔️          |
-| [payable-fallback](./rules/best-practises/payable-fallback.md)     | When fallback is not payable you will not be able to receive ethers.                                                  | ✔️          |
 | [reason-string](./rules/best-practises/reason-string.md)           | Require or revert statement must have a reason string and check that each reason string is at most N characters long. | ✔️          |
 | [constructor-syntax](./rules/best-practises/constructor-syntax.md) | Constructors should use the new constructor keyword.                                                                  |             |
         
@@ -48,25 +47,14 @@ title:       "Rule Index of Solhint"
 
 ## Security Rules
 
-| Rule Id                                                                | Error                                                                    | Recommended |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------- |
-| [avoid-call-value](./rules/security/avoid-call-value.md)               | Avoid to use ".call.value()()".                                          | ✔️          |
-| [avoid-low-level-calls](./rules/security/avoid-low-level-calls.md)     | Avoid to use low level calls.                                            | ✔️          |
-| [avoid-sha3](./rules/security/avoid-sha3.md)                           | Use "keccak256" instead of deprecated "sha3".                            | ✔️          |
-| [avoid-suicide](./rules/security/avoid-suicide.md)                     | Use "selfdestruct" instead of deprecated "suicide".                      | ✔️          |
-| [avoid-throw](./rules/security/avoid-throw.md)                         | "throw" is deprecated, avoid to use it.                                  | ✔️          |
-| [avoid-tx-origin](./rules/security/avoid-tx-origin.md)                 | Avoid to use tx.origin.                                                  | ✔️          |
-| [check-send-result](./rules/security/check-send-result.md)             | Check result of "send" call.                                             | ✔️          |
-| [compiler-version](./rules/security/compiler-version.md)               | Compiler version must satisfy a semver requirement.                      | ✔️          |
-| [func-visibility](./rules/security/func-visibility.md)                 | Explicitly mark visibility in function.                                  | ✔️          |
-| [mark-callable-contracts](./rules/security/mark-callable-contracts.md) | Explicitly mark all external contracts as trusted or untrusted.          |             |
-| [multiple-sends](./rules/security/multiple-sends.md)                   | Avoid multiple calls of "send" method in single transaction.             | ✔️          |
-| [no-complex-fallback](./rules/security/no-complex-fallback.md)         | Fallback function must be simple.                                        | ✔️          |
-| [no-inline-assembly](./rules/security/no-inline-assembly.md)           | Avoid to use inline assembly. It is acceptable only in rare cases.       | ✔️          |
-| [not-rely-on-block-hash](./rules/security/not-rely-on-block-hash.md)   | Do not rely on "block.blockhash". Miners can influence its value.        | ✔️          |
-| [not-rely-on-time](./rules/security/not-rely-on-time.md)               | Avoid to make time-based decisions in your business logic.               | ✔️          |
-| [reentrancy](./rules/security/reentrancy.md)                           | Possible reentrancy vulnerabilities. Avoid state changes after transfer. | ✔️          |
-| [state-visibility](./rules/security/state-visibility.md)               | Explicitly mark visibility of state.                                     | ✔️          |
+| Rule Id                                                                  | Error                                                                               | Recommended |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ----------- |
+| [compiler-version](./rules/security/compiler-version.md)                 | Compiler version must satisfy a semver requirement.                                 | ✔️          |
+| [no-complex-fallback](./rules/security/no-complex-fallback.md)           | Fallback function must be simple.                                                   | ✔️          |
+| [not-rely-on-block-hash](./rules/security/not-rely-on-block-hash.md)     | Do not rely on "block.blockhash". Miners can influence its value.                   | ✔️          |
+| [not-rely-on-time](./rules/security/not-rely-on-time.md)                 | Avoid to make time-based decisions in your business logic.                          | ✔️          |
+| [responsible-without-flag](./rules/security/responsible-without-flag.md) | Responsible functions must have flag in return statement for avoid vulnerabilities. | ✔️          |
+| [state-visibility](./rules/security/state-visibility.md)                 | Explicitly mark visibility of state.                                                | ✔️          |
         
 
 ## References
