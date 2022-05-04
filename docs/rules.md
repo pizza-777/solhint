@@ -47,15 +47,16 @@ title:       "Rule Index of Solhint"
 
 ## Security Rules
 
-| Rule Id                                                                  | Error                                                                               | Recommended |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ----------- |
-| [compiler-version](./rules/security/compiler-version.md)                 | Compiler version must satisfy a semver requirement.                                 | ✔️          |
-| [no-complex-fallback](./rules/security/no-complex-fallback.md)           | Fallback function must be simple.                                                   | ✔️          |
-| [not-rely-on-block-hash](./rules/security/not-rely-on-block-hash.md)     | Do not rely on "block.blockhash". Miners can influence its value.                   | ✔️          |
-| [not-rely-on-time](./rules/security/not-rely-on-time.md)                 | Avoid to make time-based decisions in your business logic.                          | ✔️          |
-| [responsible-without-flag](./rules/security/responsible-without-flag.md) | Responsible functions must have flag in return statement for avoid vulnerabilities. | ✔️          |
-| [state-visibility](./rules/security/state-visibility.md)                 | Explicitly mark visibility of state.                                                | ✔️          |
-        
+| Rule Id                                                                    | Error                                                                               | Recommended |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------- |
+| [compiler-version](./rules/security/compiler-version.md)                   | Compiler version must satisfy a semver requirement.                                 | ✔️          |
+| [no-complex-fallback](./rules/security/no-complex-fallback.md)             | Fallback function must be simple.                                                   | ✔️          |
+| [not-rely-on-block-hash](./rules/security/not-rely-on-block-hash.md)       | Do not rely on "block.blockhash". Miners can influence its value.                   | ✔️          |
+| [not-rely-on-time](./rules/security/not-rely-on-time.md)                   | Avoid to make time-based decisions in your business logic.                          | ✔️          |
+| [responsible-without-flag](./rules/security/responsible-without-flag.md)   | Responsible functions must have flag in return statement for avoid vulnerabilities. | ✔️          |
+| [state-visibility](./rules/security/state-visibility.md)                   | Explicitly mark visibility of state.                                                | ✔️          |
+| [tvm-accept-before-require](./rules/security/tvm-accept-before-require.md) | Responsible functions must have flag in return statement for avoid vulnerabilities. | ✔️          |
+
 
 ## References
 
