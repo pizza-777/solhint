@@ -57,6 +57,7 @@ title:       "Rule Index of Solhint"
 | [responsible-without-flag](./rules/security/responsible-without-flag.md)                                               | Responsible functions must have flag in return statement for avoid vulnerabilities.      | ✔️          |
 | [state-visibility](./rules/security/state-visibility.md)                                                               | Explicitly mark visibility of state.                                                     | ✔️          |
 | [tvm-accept-before-require](./rules/security/tvm-accept-before-require.md)                                             | Responsible functions must have flag in return statement for avoid vulnerabilities.      | ✔️          |
+| [two-raw-reserve](./rules/security/two-raw-reserve.md)                                                                 | Two or more following raw.reserve(...) in one function is excessive.                     | ✔️          |
         
 
 ## References
