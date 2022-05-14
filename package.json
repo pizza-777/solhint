@@ -35,7 +35,6 @@
   "author": "Ilya Drabenia <ilya.drobenya@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@solidity-parser/parser": "github:pizza-777/parser#ton-solidity-module",
     "ajv": "^6.6.1",
     "antlr4": "4.7.1",
     "ast-parents": "0.0.1",
@@ -48,7 +47,8 @@
     "ignore": "^4.0.6",
     "js-yaml": "^3.12.0",
     "lodash": "^4.17.11",
-    "semver": "^6.3.0"
+    "semver": "^6.3.0",
+    "tvm-solidity-parser": "^0.14.1"
   },
   "devDependencies": {
     "@stryker-mutator/core": "^2.3.0",
