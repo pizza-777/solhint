@@ -1,20 +1,20 @@
 {
-  "name": "solhint",
-  "version": "3.3.6",
-  "description": "Solidity Code Linter",
+  "name": "tvm-solhint",
+  "version": "3.3.7",
+  "description": "Everscale Solidity Code Linter",
   "main": "lib/index.js",
   "keywords": [
     "solidity",
     "linter",
     "security-scanner",
-    "ethereum",
+    "everscale",
     "ast",
     "developer-tools",
     "code-quality",
     "smart-contracts"
   ],
-  "homepage": "https://protofire.github.io/solhint/",
-  "repository": "https://github.com/protofire/solhint",
+  "homepage": "https://github.com/pizza-777/solhint/blob/ton-solidity/README.md",
+  "repository": "https://github.com/pizza-777/solhint/blob/ton-solidity",
   "scripts": {
     "exec-tests": "nyc mocha --recursive && nyc report --reporter=text-lcov | coveralls",
     "test:coverage": "npm run exec-tests",

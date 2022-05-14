@@ -1,22 +1,11 @@
 <p align="center">
   <img src="solhint.png">
 </p>
-<p align="center">
-  By <a href="https://protofire.io/">Protofire</a>
-</p>
 
-[![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0xe8cdf02efd8ab0a490d7b2cb13553389c9bc932e)](https://en.cryptobadges.io/donate/0xe8cdf02efd8ab0a490d7b2cb13553389c9bc932e)
+[![NPM version](https://badge.fury.io/js/solhint.svg)](https://www.npmjs.com/package/tvm-solhint)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/protofire/solhint/ton-solidity/LICENSE)
 
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/solhint/Lobby)
-[![Build Status](https://travis-ci.org/protofire/solhint.svg?branch=master)](https://travis-ci.org/protofire/solhint)
-[![NPM version](https://badge.fury.io/js/solhint.svg)](https://npmjs.org/package/solhint)
-[![Coverage Status](https://coveralls.io/repos/github/protofire/solhint/badge.svg?branch=master)](
-https://coveralls.io/github/protofire/solhint?branch=master)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/protofire/solhint/master/LICENSE)
-[![dependencies Status](https://david-dm.org/protofire/solhint/status.svg)](https://david-dm.org/protofire/solhint)
-[![devDependencies Status](https://david-dm.org/protofire/solhint/dev-status.svg)](https://david-dm.org/protofire/solhint?type=dev)
-
-This is an open source project for linting [Solidity](http://solidity.readthedocs.io/en/develop/) code. This project
+This is an open source project for linting [Everscale Solidity](https://github.com/tonlabs/TON-Solidity-Compiler/blob/master/API.md) code. This project
 provides both **Security** and **Style Guide** validations.
 
 ## Installation
@@ -24,7 +13,7 @@ provides both **Security** and **Style Guide** validations.
 You can install Solhint using **npm**:
 
 ```sh
-npm install -g solhint
+npm install -g tvm-solhint
 
 # verify that it was installed correctly
 solhint --version
@@ -38,7 +27,7 @@ First initialize a configuration file, if you don't have one:
 solhint --init
 ```
 
-This will create a `.solhint.json` file with the default rules enabled. Then run Solhint with one or more [Globs](https://en.wikipedia.org/wiki/Glob_(programming)) as arguments. For example, to lint all files inside `contracts` directory, you can do:
+This will create a `.tvm-solhint.json` file with the all rules enabled. Then run Solhint with one or more [Globs](https://en.wikipedia.org/wiki/Glob_(programming)) as arguments. For example, to lint all files inside `contracts` directory, you can do:
 
 ```sh
 solhint 'contracts/**/*.sol'
@@ -181,17 +170,6 @@ Or disable all validations for a group of lines:
 
 Related documentation you may find [here](https://protofire.github.io/solhint/).
 
-## IDE Integrations
-
-  - **[Sublime Text 3](https://packagecontrol.io/search/solhint)**
-  - **[Atom](https://atom.io/packages/atom-solidity-linter)**
-  - **[Vim](https://github.com/sohkai/syntastic-local-solhint)**
-  - **[JetBrains IDEA, WebStorm, CLion, etc.](https://plugins.jetbrains.com/plugin/10177-solidity-solhint)**
-  - **[VS Code: Solidity by Juan Blanco](
-         https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)**
-  - **[VS Code: Solidity Language Support by CodeChain.io](
-         https://marketplace.visualstudio.com/items?itemName=kodebox.solidity-language-server)**
-
 ## Table of Contents
 
 * [Roadmap](ROADMAP.md): The core project's roadmap - what the core team is looking to work on in the near future.
@@ -199,40 +177,10 @@ Related documentation you may find [here](https://protofire.github.io/solhint/).
 * [Shareable configs](docs/shareable-configs.md): How to create and share your own configurations.
 * [Writing plugins](docs/writing-plugins.md): How to extend Solhint with your own rules.
 
-## Plugins
-
-- [solhint-plugin-prettier](https://github.com/fvictorio/solhint-plugin-prettier): Integrate Solhint
-  with the [Solidity plugin for Prettier](https://github.com/prettier-solidity/prettier-plugin-solidity).
-
-## Who uses Solhint?
-[<img src="https://avatars0.githubusercontent.com/u/20820676?s=200&v=4" width="75px" height="75px" alt="OpenZeppelin" title="OpenZeppelin" style="margin: 20px 20px 0 0" />](https://github.com/OpenZeppelin)
-[<img src="https://avatars2.githubusercontent.com/u/28943015?s=200&v=4" width="75px" height="75px" alt="POA Network - Public EVM Sidechain" title="POA Network - Public EVM Sidechain" style="margin: 20px 20px 0 0" />](https://github.com/poanetwork) [<img src="https://avatars3.githubusercontent.com/u/24832717?s=200&v=4" width="75px" height="75px" alt="0x" title="0x" style="margin: 20px 20px 0 0" />](https://github.com/0xProject) [<img src="https://avatars1.githubusercontent.com/u/24954468?s=200&v=4" width="75px" height="75px" alt="GNOSIS" title="GNOSIS" style="margin: 20px 20px 0 0"/>](https://github.com/gnosis)
-
-### Projects
-
-- OpenZeppelin:
-  - [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
-- POA Network - Public EVM Sidechain:
-  - [Proof of Physical Address (PoPA)](https://github.com/poanetwork/poa-popa)
-  - [Proof of Bank Account (PoBA)](https://github.com/poanetwork/poa-poba)
-- [0x](https://github.com/0xProject/0x-monorepo/tree/development/contracts)
-- Gnosis:
-  - [Gnosis Prediction Market Contracts](https://github.com/gnosis/pm-contracts)
-  - [The DutchX decentralized trading protocol](https://github.com/gnosis/dex-contracts)
-
 ## Acknowledgements
 
-The Solidity parser used is [`@solidity-parser/parser`](https://github.com/solidity-parser/parser).
+The Everscale Solidity parser used is [`pizza-777/parser`](https://github.com/pizza-777/parser).
 
 ## Licence
 
 MIT
-
-## Back us
-Solhint is free to use and open-sourced. If you value our effort and feel like helping us to keep pushing this tool forward, you can send us a small donation. We'll highly appreciate it :)
-
-[![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0xe8cdf02efd8ab0a490d7b2cb13553389c9bc932e)](https://en.cryptobadges.io/donate/0xe8cdf02efd8ab0a490d7b2cb13553389c9bc932e)
-
-## Related projects
-
-- [eth-cli](https://github.com/protofire/eth-cli): CLI swiss army knife for Ethereum developers.
